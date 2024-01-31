@@ -3,7 +3,7 @@
 }
 
 .box {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-areas:
     "left header right"
@@ -14,7 +14,7 @@
 }
 .header {
   grid-area: header;
-  background-color: red;
+  background-color: lightblue;
   display: flex;
   align-items: center;
   font-size: 20px;
@@ -85,7 +85,6 @@ img {
   grid-area: main;
   background-color: darkblue;
   display: flex;
-  
 }
 .c1 {
   height: 700px;
@@ -108,4 +107,45 @@ img {
   background-color: green;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 992px) {
+  .box {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "left"
+      "header"
+      "right"
+      "main"
+      "bottom";
+  }
+  .left {
+    display: flex;
+  }
+  .img,
+  .box1,
+  .box2 {
+    width: 33.33%;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .right h2,
+  .right .p1,
+  .right .p2,
+  .right .p3 {
+    width: 24%;
+    height: 100px;
+  }
+
+  .bottom {
+    height: 100px;
+  }
 }
