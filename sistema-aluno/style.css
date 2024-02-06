@@ -4,8 +4,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 15vh 75vh 10vh;
   grid-template-areas:
     "header header"
     "main main"
@@ -38,22 +38,18 @@ header a:hover {
 
 .main {
   grid-area: main;
-
   display: grid;
-  font-size: 2.5em;
-
   grid-template-columns: 5% 67.5% 22.5% 5%;
   grid-template-rows: 100%;
-  grid-template-areas: "section aside";
+  font-size: 2.5em;
 }
 section {
-  grid-area: section;
   background-color: salmon;
-  grid-column: 2/4;
+  grid-column: 2/3;
 }
 aside {
-  grid-area: aside;
   background-color: red;
+  grid-column: 3/4;
 }
 
 footer {
@@ -61,4 +57,18 @@ footer {
   font-size: 2.5em;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  margin: 0 auto;
+}
+
+/*Aluno*/
+
+.forms {
+  font-size: 2.5em;
+  margin: 0 100px;
+  background-color: salmon;
+  height: 100%;
 }
