@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="professor.css">
+  <title>Professor</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="img.jpg" alt="giannis" />
+      <nav>
+        <a href="aluno.html">Aluno</a>
+        <a href="index.html">Home</a>
+        <a href="professor.html">Professor</a>
+      </nav>
+      <img src="img.jpg" alt="giannis" />
+    </header>
+
+    
+        <article class="forms">
+            <h1>Cadastro Professor</h1>
+          <div class="dados_pessoais">
+              <h3>Dados Pessoais</h3>
+              <form action="professor.php" method="get">
+                <label for="name">Nome do Aluno</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"required class="forms_caixa">
+                <label for="name">Endereço</label>
+                <input type="text" name="endereco_professor" id="endereço" placeholder="Digite seu endereço"required class="forms_caixa">
+                <label for="name">Idade do Professor</label>
+                <input type="number" name="idade" id="idade_professor" placeholder="Digite sua idade" required class="forms_caixa">
+                <label for="name">Senha</label>
+                <input type="" name="senha" id="senha" placeholder="Digite sua senha"required class="forms_caixa">
+                <input type="submit" value="salvar">
+              </form>
+          </div>
+          <div class="dados_pessoais">
+            <h3>Cadastro Profissionais</h3>
+            <form action="professor.php" method="get">
+                <label for="name">Nome do Aluno</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"required class="forms_caixa">
+                <label for="name">Endereço</label>
+                <input type="text" name="endereço" id="endereço" placeholder="Digite seu endereço"required class="forms_caixa">
+                <label for="name">Idade do Aluno</label>
+                <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required class="forms_caixa">
+                <label for="name">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha"required class="forms_caixa">
+                <input type="submit" value="salvar">
+              </form>
+
+          </div>
+        </article>
+
+
+    <footer>
+      <p>Rodapé</p>
+    </footer>
+
+</body>
+
+</html>
