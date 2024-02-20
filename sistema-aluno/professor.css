@@ -48,6 +48,9 @@ table,
 th,
 td {
   border: 1px black solid;
+  border-collapse: collapse; /*Bruno sabe mt  */
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   padding: 5px 5px;
   font-size: 1 em;
