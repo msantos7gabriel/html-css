@@ -20,20 +20,26 @@
         </header>
         <article class="main">
             <section>Lista de Alunos</section>
-            <table><tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Senha</th>
-                <th>Endereço</th>
-            </tr>
-            <td>Gabriel</td>
-            <td>23</td>
-            <td>123</td>
-            <td>Rua dos Bobos, 56 - Bairro do Gabi - SP</td></tr>
-            <tr>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Senha</th>
+                    <th>Endereço</th>
+                </tr>
+                <?php
+                $nome = $_GET["nome"];
+                $idade = $_GET["idade"];
+                $senha = $_GET["senha"];
+                $endereco = $_GET["endereço"];
 
-            </tr>
-        </table>
+                echo "<td>$nome</td>";
+                echo "<td>$idade</td>";
+                echo "<td>$senha</td>";
+                echo "<td>$endereco</td>";
+                ?>
+                </tr>
+            </table>
 
         </article>
         <footer>
